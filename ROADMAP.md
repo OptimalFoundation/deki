@@ -1,5 +1,10 @@
+### 0.0.2
+
+- [ ] Add a total of 20 functions in the repository for testing
+- [ ] Add the .gif function to the visualizer
+
 ### 0.0.1
 
-- [x] Readily usable testing script on MNIST 
-- [x] Implementation of SGD, Adam in PyPi Module of Nadir 
-- [ ] Have BaseOptimiser class, BaseMomentumOptimiser and BaseAdaptiveOptimiser class
+- [x] Add the base Visualizer class with Plot function
+- [x] Add Rosenbrock and Sphere function
+- [ ] Add a total of 10 functions in the repository for testing
