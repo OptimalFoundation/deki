@@ -13,7 +13,7 @@ from torch.optim import Optimizer
 __all__ = ['Visualizer']
 
 
-class Visualiser:
+class Visualizer:
 
   def __init__ (self, 
                 function : Callable[..., torch.Tensor],
@@ -116,9 +116,10 @@ class Visualiser:
       self._save_plot(title)
 
   def _save_plot (self, title : str = None):
-    assert type(title) == str, f"Title must be of str type, you gave {type(title)}"
     
     if title != None:
+      assert type(title) == str, f"Title must be of str type, you gave {type(title)}"
+      
       plt.savefig(self.save_dir +
                   '/' +
                   f"{title}.png")

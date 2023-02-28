@@ -1,5 +1,5 @@
 import torch
-from .visualizer import Visualiser
+from .visualizer import Visualizer
 
 __all__ = ['rosenbrock_fn', 'Rosenbrock']
 
@@ -10,7 +10,7 @@ def rosenbrock_fn(X, a=1, b=100):
   return t1 + t2
 
 
-Rosenbrock = Visualiser(rosenbrock_fn,
+Rosenbrock = Visualizer(rosenbrock_fn,
                         x_range = (-2, 2),
                         y_range = (-1, 3),
                         minima = (1, 1),
