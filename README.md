@@ -10,7 +10,9 @@ And the best part, it is extremely simple to use! Just a few steps and you'll fi
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
+    - [Custom Optimizer](#custom-optimizer)
     - [Custom Test Function](#custom-test-function)
+- [Supported Functions](#supported-functions)
 - [Acknowledgement](#acknowledgement)
 - [Citation](#citation)
 
@@ -37,8 +39,24 @@ Rosenbrock.plot((optimiser, optimiser_state), steps)
 
 ![Rosenbrock Plot with SGD](assets/rosenbrock_sgd.png)
 
+### Custom Optimizer
 
 Just like its mentioned above, any PyTorch optimizer class can be used as long as its required keyword args can be passed in a dict. In conclusion, **Deki can handle your custom optimizers, so build away!**
+
+```python
+from torch.optim import Optimizer
+from deki import Rosenbrock
+
+class MySpecialOptimizer(Optimizer):
+    ...
+
+optimizer = MySpecialOptimizer
+optimiser_state = {"lr":1E-3}
+steps = 1000
+
+Rosenbrock.plot((optimiser, optimiser_state), steps)
+```
+
 
 ### Custom Test Function
 
