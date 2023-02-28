@@ -21,7 +21,7 @@ $ pip install deki
 ```
 ## Usage
 
-Deki works by taking in `torch.optim.Optimizer` objects and a configuration dictionary for the hyperparameters and other keyword arguments, like in the example below 🔻
+Deki works by taking in `torch.optim.Optimizer` classes and a configuration dictionary for the hyperparameters and other keyword arguments, like in the example below 🔻
 
 ```python
 from torch.optim import SGD
@@ -73,6 +73,12 @@ visualizer.plot((SGD, {"lr":1E-3}), steps=1000)
 ![Custom function plot with SGD](assets/sphere_sgd.png)
 
 
+## Supported Functions
+
+|  Function  	| Example 	|
+|:----------:	|:-------:	|
+| Rosenbrock 	|         	|
+|   Sphere   	|         	|
 
 
 ## Acknowledgement
