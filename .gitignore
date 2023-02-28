@@ -1,2 +1,6 @@
 src/deki.egg-info/*
 src/deki/__pycache__/*
+
+
+dist/*
+build/*
