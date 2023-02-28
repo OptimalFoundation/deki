@@ -11,7 +11,7 @@ authors = [
 maintainers = [
   { name = "Bhavnick Minhas", email="bhavnicksm@gmail.com"},
 ]
-description = "Nadir is a library of bleeding-edge DL optimisers built for speed and functionality in PyTorch for researchers"
+description = "Deki is a library is to create beautiful interative visuals to understand your optimizer better, because seeing is believing!"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
