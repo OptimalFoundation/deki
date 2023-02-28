@@ -37,7 +37,7 @@ Rosenbrock.plot((optimiser, optimiser_state), steps)
 ```
 
 
-![Rosenbrock Plot with SGD](assets/rosenbrock_sgd.png)
+![Rosenbrock Plot with SGD](https://github.com/Dawn-Of-Eve/deki/raw/main/assets/rosenbrock_sgd.png)
 
 ### Custom Optimizer
 
@@ -88,7 +88,7 @@ visualizer = Visualizer( my_special_test_function,
 # Now call the plot function with the optimizer to get the plot
 visualizer.plot((SGD, {"lr":1E-3}), steps=1000)
 ```
-![Custom function plot with SGD](assets/sphere_sgd.png)
+![Custom function plot with SGD](https://github.com/Dawn-Of-Eve/deki/raw/main/assets/sphere_sgd.png)
 
 
 ## Supported Functions
