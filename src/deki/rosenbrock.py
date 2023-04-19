@@ -14,6 +14,6 @@ Rosenbrock = Visualizer(rosenbrock_fn,
                         x_range = (-2, 2),
                         y_range = (-1, 3),
                         minima = (1, 1),
-                        start = (-1.5, 2.5), 
+                        start = (-1.5, 1), 
                         precision = 200)
 
